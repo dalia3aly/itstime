@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #DF0D0D;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 100px;
+    max-height: 100%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4em;
+}
+
+.link {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.link:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.landingPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.categoryFilters {
+    margin: 20px 0;
+}
+
+.categoryButtons {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #DF0D0D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+}
+
+.categoryButtons:hover {
+    background-color: #333;
+}

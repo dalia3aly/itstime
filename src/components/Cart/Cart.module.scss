@@ -1,0 +1,28 @@
+.cart {
+    padding: 20px;
+    background-color: #fff6f6;
+    border-radius: 8px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.quantityBtn {
+    padding: 5px 15px;
+    background-color: #f3c526;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
