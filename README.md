@@ -1,5 +1,7 @@
 # IT'S TIME - E-commerce Platform for Watches
 
+- **Deployed Link:** https://itstime-watches.netlify.app/
+
 IT'S TIME is a sophisticated e-commerce platform dedicated to offering a range of Swiss watches, designed with modern web technologies. This platform leverages React, Firebase, and a meticulously designed Cart Context to provide a seamless shopping experience.
 
 ## Features
