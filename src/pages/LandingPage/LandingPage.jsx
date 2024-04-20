@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { getCollectionImages } from "../../services/collectionsServices/collectionServices";
 import Carousel from "../../components/Carousel/Carousel";
 import ProductsContainer from "../../components/ProductsContainer/ProductsContainer";
-import SearchBar from "../../components/SearchBar/SearchBar";
 import styles from "./LandingPage.module.scss";
 import { ColorRing } from "react-loader-spinner";
 
