@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Environment
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -29,5 +32,3 @@ searchServices
 SearchBar
 CheckOutPage
 
-# Sensitive data
-firestore.js
