@@ -10,7 +10,7 @@ const totalItems = cart.items.reduce((acc, item) => acc + item.quantity, 0);
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src="/itstime.png" alt="Logo" />
+        <img src="/itstime.png" alt="logo" />
       </div>
       <div className={styles.links}>
         <NavLink
