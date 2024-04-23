@@ -7,7 +7,6 @@ import { useCart } from "../../contexts/CartContext";
 
 const ProductDetails = ({ product, quantity, onQuantityChange }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [toast, setToast] = useState({ message: "", visible: false });
   const { cart, dispatch } = useCart();
 
   const toggleDescription = () => {
@@ -18,8 +17,7 @@ const ProductDetails = ({ product, quantity, onQuantityChange }) => {
    try {
      if (!product.id) {
        console.error("Invalid product ID");
-       setToast({ message: "Invalid product data.", visible: true });
-       setTimeout(() => setToast({ message: "", visible: false }), 3000);
+       alert({ message: "Invalid product data.", visible: true });
        return;
      }
 
@@ -35,15 +33,14 @@ const ProductDetails = ({ product, quantity, onQuantityChange }) => {
            image_urls: product.image_urls,
          },
        });
-       setToast({ message: "Product added to cart!", visible: true });
+       console.log({ message: "Product added to cart!", visible: true});
      } else {
-       setToast({ message: "Not enough items in stock!", visible: true });
+       console.log({ message: "Not enough items in stock!", visible: true });
      }
    } catch (error) {
      console.error("Error updating product quantity:", error);
-     setToast({ message: "Failed to add product to cart.", visible: true });
+     console.log({ message: "Failed to add product to cart.", visible: true });
    }
-   setTimeout(() => setToast({ message: "", visible: false }), 3000);
  };
 
   return (

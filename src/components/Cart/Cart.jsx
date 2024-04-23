@@ -12,7 +12,9 @@ const Cart = () => {
 
   // quantity update
   const updateQuantity = (id, quantity) => {
-    dispatch({ type: "UPDATE_QUANTITY", payload: { id, quantity } });
+    if (quantity >= 1) {
+      dispatch({ type: "UPDATE_QUANTITY", payload: { id, quantity } });
+    }
   };
 
   return (
@@ -26,7 +28,7 @@ const Cart = () => {
               <div className={styles.Buttons}>
                 <button
                   className={styles.quantityBtn}
-                  onClick={() => updateQuantity(item.id, item.quantity - 1)}>
+                  onClick={() => item.quantity > 1 && updateQuantity(item.id, item.quantity - 1)}>
                   -
                 </button>
                 <button

@@ -27,7 +27,10 @@ const ProductDetailsPage = () => {
   }, [id]);
 
  const handleQuantityChange = (newQuantity) => {
-   setQuantity(parseInt(newQuantity));
+   const parsedQuantity = parseInt(newQuantity);
+   if (parsedQuantity >= 1) {
+     setQuantity(parsedQuantity);
+   }
  };
 
   const handleAddToCart = () => {
